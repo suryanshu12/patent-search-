@@ -19,7 +19,7 @@ client = OpenAI(api_key=api_key)
 # -------------------- Load Excel Dataset --------------------
 @st.cache_data
 def load_data():
-    df = pd.read_excel(r"C:\Users\lenovo\Desktop\patent\patent_data.xlsx")
+    df = pd.read_excel("patent_data.xlsx")
     df.fillna("", inplace=True)
     return df
 
